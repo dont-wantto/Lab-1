@@ -1,0 +1,184 @@
+1. Write a program that reads a year from the keyboard and determine whether it is leap year or not.
+solving:
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+int y;
+cout<<"enter a year = ";
+cin>>y;
+if((y%4==0 && y%100!=0) || (y%400==0)){
+cout<<"the year is leap year"<<endl;
+
+}
+else
+cout<<"the year is not leap year"<<endl;
+    return 0;
+}
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+2. Write a program to find the integer square root of a given number.
+solve:
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+int y,d;
+cout<<"enter a num = ";
+cin>>y;
+d=sqrt(y);
+cout<<d<<endl;
+return 0;
+}
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+3. Write a program that reverses the digits of a given positive integer.
+solve:
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+int num,lastdigit,reversed;
+cout<<"enter a num = ";
+cin>>num;
+   reversed=0; 
+while(num>0){
+
+lastdigit=num%10;
+reversed= reversed*10+lastdigit;
+num=num/10;
+};
+cout<<reversed<<endl;
+    return 0;
+}
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+4. Write a program to compute the sum of the digits of a given positive integer.
+solve:
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+int num,lastdigit,sum;
+cout<<"enter a num = ";
+cin>>num;
+   sum=0; 
+while(num>0){
+
+lastdigit=num%10;
+sum+=lastdigit;
+num=num/10;
+};
+cout<<sum<<endl;
+    return 0;
+}
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+5. Write a program that will read a positive integer and determine and print its binary equivalent.
+solve:
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int bin[32],d;
+cout<<"enter a positive integer =";
+cin>>d;
+int i=0;
+while(d>0){
+bin[i]=d%2;
+d=d/2;
+i++;
+}
+cout<<"binary eq of the given number is =";
+for(int j=i-1; j>=0;j--){
+    cout<<bin[j];
+}
+cout<<endl;
+ return 0;
+}
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+6. Write a program which calculate the no. of occurrence of each letter of an input text.
+solve:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
