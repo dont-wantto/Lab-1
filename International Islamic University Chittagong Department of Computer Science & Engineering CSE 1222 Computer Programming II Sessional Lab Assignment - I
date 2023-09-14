@@ -94,6 +94,161 @@ cout<<endl;
 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 6. Write a program which calculate the no. of occurrence of each letter of an input text.
 solve:
+#include <bits/stdc++.h>
+using namespace std;
+int main(){ 
+int total = 26;
+int arr[total] ={0};
+string text;
+cout<<"enter a text = ";
+getline(cin,text);
+for(int i=0;i<text.length();i++){
+char ch = tolower(text[i]);
+if(ch>='a' && ch<='z'){
+    arr[ch-'a']++;
+}
+}
+
+cout<<"the frequencies of the charachters = "<<endl;
+for(int i=0;i <total;i++){
+if(arr[i]>0){
+    char let ='a'+i;
+    cout<<let<<":"<<arr[i]<<"times"<<endl;
+}
+
+}
+    return 0;
+}
+________________________________________________________________________________________________________________________________________________________________________________________
+7. Write a C program that will read a string and rewrite it in the alphabetical order. For example, the word STRING should be
+written as GINRST.
+solve:
+#include <bits/stdc++.h>
+using namespace std;
+int main(){ 
+string text;
+int n;
+cout<<"enter a string =";
+getline(cin,text);
+n=text.length();
+for(int i=0;i<n-1;i++){
+for(int j=0;j<n-1;j++){
+if(text[j]>text[j+1]){
+char temp= text[j];
+text[j]= text[j+1];
+text[j+1]=temp;
+}}}
+cout<<"sorted characters of the string = "<<text;
+ return 0;
+}
+_______________________________________________________________________________________________________________________________________________________________________________________
+8. Write a program to evaluate the following functions to .001% accuracy
+a) sin x = x – x^3/ 3! + x^5/ 5! – x^7/ 7! + ….....
+b) cos x = 1 – x^2/ 2! + x^4/ 4! – x^6/ 6! +............
+
+solve: will be updated
+
+9) A cricket team has the following table of batting figures for a series of test matches:
+_______________________________________________________________________________________________________________
+Player’s Name |   Runs |    Innings   |  Times not out |
+______________|________|______________|________________|________________________________________________________
+Javed            332          4               2
+Bulbul           214          3               1
+Akram            115          3               0
+…….              … ..        ..             .....
+____________________________________________________________________________________________________________________
+Write a program to read the figures set out in the above form, to calculate the batting averages and to print out the complete
+table including the averages.
+
+solve:
+will be updated
+10. Write a program to find the 100!
+solve : will be updated
+
+11. Write a program to determine the value of the nth Fibonacci number Fn where Fn = Fn–1+ Fn-2 and F1 = F2 = 1 and n<=500.
+solve : will be updated 
+
+12)
+Write a program to generate the following pyramid of digits using nested loops.
+                  1
+                2 3 2
+              3 4 5 4 3
+            4 5 6 7 6 5 4
+          5 6 7 8 9 8 7 6 5
+        6 7 8 9 0 1 0 9 8 7 6
+      7 8 9 0 1 2 3 2 1 0 9 8 7
+    8 9 0 1 2 3 4 5 4 3 2 1 0 9 8
+  9 0 1 2 3 4 5 6 7 6 5 4 3 2 1 0 9
+0 1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1 0
+
+solve:
+#include <iostream>
+
+int main() {
+    int numRows = 10; // Number of rows in the pyramid
+
+    for (int i = 1; i <= numRows; i++) {
+        // Print leading spaces
+        for (int j = 1; j <= numRows - i; j++) {
+            std::cout << "  "; // Two spaces for alignment
+        }
+
+        // Print ascending numbers
+        for (int j = i; j <= 2 * i - 1; j++) {
+            std::cout << j % 10 << " ";
+        }
+
+        // Print descending numbers
+        for (int j = 2 * i - 2; j >= i; j--) {
+            std::cout << j % 10 << " ";
+        }
+
+        std::cout << std::endl;
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
